@@ -43,6 +43,6 @@ RUN;
 PROC TABULATE data = ch4.pizzaratings FORMAT = 5.3;
 	CLASS Topping;
 	VAR Rating;
-	TABLE Topping, MEAN*Rating;
+	TABLE Topping, MEAN*Rating N*Rating;
 	TITLE "Mean Pizza Topping Rating Using PROC TABULATE";
 RUN;
